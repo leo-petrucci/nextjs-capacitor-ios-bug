@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && npx cap sync",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
+    "@capacitor/cli": "^2.4.2",
+    "@capacitor/core": "^2.4.2",
+    "@capacitor/ios": "^2.4.2",
     "next": "9.5.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"
